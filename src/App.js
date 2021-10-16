@@ -13,18 +13,30 @@ export class App extends react.Component {
         return (
             <Router>
                 <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/about">About</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                    {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+                    <header>
+                        <div>
+                            <Link to="/">
+
+                            </Link>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <Link to="pricing">Pricing</Link>
+                                </li>
+                                <li>
+                                    <Link to="about">About</Link>
+                                </li>
+                                <li>
+                                    <Link to="contact">Contact</Link>
+                                </li>
+                                <button >
+                                    Schedule a Demo
+                                </button>
+                            </ul>
+                        </nav>
+                        <button className="hidden" onClick="showHideMenu"></button>
+                    </header>
                     <Switch>
                         <Route path="/about">
                             <About />
@@ -33,6 +45,9 @@ export class App extends react.Component {
                             <Home />
                         </Route>
                     </Switch>
+                    <footer>
+
+                    </footer>
                 </div>
             </Router>
         )
