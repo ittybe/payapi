@@ -8,6 +8,8 @@ import {
 import Home from "./Home";
 import About from "./About";
 
+import logo from "./assets/shared/desktop/logo.svg"
+
 export class App extends react.Component {
     render() {
         return (
@@ -16,7 +18,7 @@ export class App extends react.Component {
                     <header>
                         <div>
                             <Link to="/">
-
+                                <img src={logo} alt="logo" />
                             </Link>
                         </div>
                         <nav>
@@ -30,21 +32,29 @@ export class App extends react.Component {
                                 <li>
                                     <Link to="contact">Contact</Link>
                                 </li>
-                                <button >
+                                <button>
                                     Schedule a Demo
                                 </button>
                             </ul>
                         </nav>
                         <button className="hidden" onClick="showHideMenu"></button>
                     </header>
-                    <Switch>
-                        <Route path="/about">
-                            <About />
-                        </Route>
-                        <Route path="/">
-                            <Home />
-                        </Route>
-                    </Switch>
+                    <div>
+                        <Switch>
+                            <Route path="/contact">
+                                
+                            </Route>
+                            <Route path="/pricing">
+
+                            </Route>
+                            <Route path="/about">
+                                <About />
+                            </Route>
+                            <Route path="/">
+                                <Home />
+                            </Route>
+                        </Switch>
+                    </div>
                     <footer>
 
                     </footer>
