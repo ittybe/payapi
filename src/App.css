@@ -1,0 +1,7 @@
+.navigation {
+    @apply hidden flex-row items-center flex-1;
+}
+
+.navigation>ul>li {
+    @apply m-5;
+}

@@ -1,0 +1,23 @@
+.start-section {
+
+}
+
+.start-section .img-wrapper img {
+    margin-right: -30px ; 
+}
+
+.big-heading {
+    @apply leading-tight;
+    font-size: var(--m-big-heading);
+    font-family: var(--heading-font-family);
+    color: var(--blue);
+    text-align: center;
+}
+
+.under-text {
+    color: var(--light-blue);
+}
+
+.under-text span {
+    font-weight: bold;
+}

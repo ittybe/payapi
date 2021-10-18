@@ -1,21 +1,25 @@
 import react from "react";
 import {Link} from "react-router-dom";
+import "./Home.css";
+import phoneMockup from "./assets/home/desktop/illustration-phone-mockup.png"
 
 export class Home extends react.Component {
     render() {
         return (
             <div>
                 {/* start section */}
-                <div>
+                <div className="start-section">
                     {/* image */}
-                    <div></div>
+                    <div className="img-wrapper">
+                        <img src={phoneMockup} alt="" />
+                    </div>
                     <div>
                         {/* heading */}
-                        <div>Start building with our APIs for absolutely free.</div>
+                        <div className="big-heading">Start building with our APIs for absolutely free.</div>
                         {/* email component */}
                         <div></div>
                         {/* under text */}
-                        <div>Have any questions?<Link to="/contact"> Contact Us</Link> </div>
+                        <div className="under-text text-center">Have any questions? <Link to="/contact"><span>Contact</span></Link> </div>
                     </div>                    
                 </div>
                 {/* business allies section */}
