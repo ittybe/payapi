@@ -10,7 +10,6 @@
     @apply leading-tight;
     font-size: var(--m-big-heading);
     font-family: var(--heading-font-family);
-    color: var(--blue);
     text-align: center;
 }
 

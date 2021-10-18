@@ -3,6 +3,13 @@ import {Link} from "react-router-dom";
 import "./Home.css";
 import phoneMockup from "./assets/home/desktop/illustration-phone-mockup.png"
 
+import microsoftLogo from "./assets/shared/desktop/microsoft.svg";
+import nvidiaLogo from "./assets/shared/desktop/nvidia.svg"
+import oracleLogo from "./assets/shared/desktop/oracle.svg"
+import teslaLogo from "./assets/shared/desktop/tesla.svg"
+import twitterLogo from "./assets/shared/desktop/twitter.svg"
+import googleLogo from "./assets/shared/desktop/google.svg"
+
 export class Home extends react.Component {
     render() {
         return (
@@ -23,17 +30,24 @@ export class Home extends react.Component {
                     </div>                    
                 </div>
                 {/* business allies section */}
-                <div>
+                <div className="business-allies"> 
                     {/* images */}
-                    <div></div>
+                    <div className="logos">
+                        <div><img src={teslaLogo} alt="l" /></div>
+                        <div><img src={microsoftLogo} alt="l" /></div>
+                        <div><img src={oracleLogo} alt="l" /></div>
+                        <div><img src={nvidiaLogo} alt="l" /></div>
+                        <div><img src={twitterLogo} alt="l" /></div>
+                        <div><img src={googleLogo} alt="l" /></div>
+                    </div>
                     {/* text */}
                     <div>
-                        <div>Who we work with</div>
-                        <div> Today, millions of people around the world have successfully connected 
+                        <div className="big-heading">Who we work with</div>
+                        <div > Today, millions of people around the world have successfully connected 
     their accounts to apps they love using our API. We provide developers 
     with the tools they need to create easy and accessible experiences 
     for their users.</div>
-                        <Link to="/about">
+                        <Link to="/about" className="button">
                             About Us
                         </Link>
                     </div>
