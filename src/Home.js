@@ -7,7 +7,7 @@ import microsoftLogo from "./assets/shared/desktop/microsoft.svg";
 import nvidiaLogo from "./assets/shared/desktop/nvidia.svg"
 import oracleLogo from "./assets/shared/desktop/oracle.svg"
 import teslaLogo from "./assets/shared/desktop/tesla.svg"
-import twitterLogo from "./assets/shared/desktop/twitter.svg"
+import hewlettLogo from "./assets/shared/desktop/hewlett-packard.svg"
 import googleLogo from "./assets/shared/desktop/google.svg"
 
 export class Home extends react.Component {
@@ -22,7 +22,7 @@ export class Home extends react.Component {
                     </div>
                     <div>
                         {/* heading */}
-                        <div className="big-heading">Start building with our APIs for absolutely free.</div>
+                        <div className="big-heading text-blue">Start building with our APIs for absolutely free.</div>
                         {/* email component */}
                         <div></div>
                         {/* under text */}
@@ -37,22 +37,22 @@ export class Home extends react.Component {
                         <div><img src={microsoftLogo} alt="l" /></div>
                         <div><img src={oracleLogo} alt="l" /></div>
                         <div><img src={nvidiaLogo} alt="l" /></div>
-                        <div><img src={twitterLogo} alt="l" /></div>
+                        <div><img src={hewlettLogo} alt="l" /></div>
                         <div><img src={googleLogo} alt="l" /></div>
                     </div>
                     {/* text */}
-                    <div>
-                        <div className="big-heading">Who we work with</div>
-                        <div > Today, millions of people around the world have successfully connected 
+                    <div className="text-center">
+                        <div className="big-heading text-white">Who we work with</div>
+                        <div className="text-gray"> Today, millions of people around the world have successfully connected 
     their accounts to apps they love using our API. We provide developers 
     with the tools they need to create easy and accessible experiences 
     for their users.</div>
-                        <Link to="/about" className="button">
+                        <Link to="/about" className="rounded-full border-2 border-white py-3 px-8 text-white inline-block">
                             About Us
                         </Link>
                     </div>
                 </div>
-                {/* easy to implement */}
+                {/* easy to implement section*/}
                 <div>
                     {/* image */}
                     <div></div>

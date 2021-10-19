@@ -8,8 +8,9 @@ module.exports = {
       "blue": "var(--blue)",
       "light-blue": "var(--light-blue)",
       "mirage-blue": "var(--mirage-blue)",
-      "charm-pink": "var(--charm-pink)"
-
+      "charm-pink": "var(--charm-pink)",
+      "white": "#fff",
+      "gray": "var(--gray)"
     },
     extend: {
 

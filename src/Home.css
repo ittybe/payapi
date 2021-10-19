@@ -20,3 +20,29 @@
 .under-text span {
     font-weight: bold;
 }
+
+.logos {
+    --logo-height: 27px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: var(--logo-height);
+    column-gap: 10px;
+    row-gap: 15px;
+}
+.logos>div {
+    @apply flex justify-center items-center;
+}
+
+.business-allies {
+    background-color: var(--mirage-blue);
+}
+
+.business-allies>.logos>div>img {
+    /* white */
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(194deg) brightness(109%) contrast(112%);
+}
+
+.button {
+    @apply rounded-full; 
+}
