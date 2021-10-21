@@ -13,6 +13,8 @@ import googleLogo from "./assets/shared/desktop/google.svg"
 import easyToImp from "./assets/home/desktop/illustration-easy-to-implement.png"
 import simpleUi from "./assets/home/desktop/illustration-simple-ui.svg"
 
+import personalFinances from "./assets/home/desktop/icon-personal-finances.svg"
+
 
 export class Home extends react.Component {
     render() {
@@ -64,8 +66,8 @@ export class Home extends react.Component {
                     </div>
                     {/* text */}
                     <div>
-                        <div className="big-heading text-blue mb-4">Easy to implement</div>
-                        <div className="text-light-blue leading-8">Our API comes with just a few lines of code. You’ll be up and running in 
+                        <div className="text-blue">Easy to implement</div>
+                        <div className="text-light-blue">Our API comes with just a few lines of code. You’ll be up and running in 
     no time. We built our documentation page to integrate payments functionality 
     with ease.</div>
                     </div>
@@ -78,21 +80,23 @@ export class Home extends react.Component {
                     </div>
                     {/* text */}
                     <div>
-                        <div className="big-heading text-blue mb-4">Simple UI &amp; UX</div>
-                        <div className="text-light-blue leading-8">
+                        <div className="text-blue">Simple UI &amp; UX</div>
+                        <div className="text-light-blue">
                         Our pre-built form is easy to integrate in your app or website’s checkout 
     flow and designed to optimize conversion.
                         </div>
                     </div>
                 </div>
                 {/* pros style it with grid*/}
-                <div>
-                    <div>
+                <div className="pros-section">
+                    <div className="pro text-center">
                         {/* image */}
-                        <div></div>
+                        <div className="inline-block mb-8">
+                            <img src={personalFinances} alt="" />
+                        </div>
                         {/* text */}
-                        <div>Personal Finances</div>
-                        <div>Consolidate financial data from multiple sources and categorize transactions up to
+                        <div className="text-blue font-bold mb-4">Personal Finances</div>
+                        <div className="text-light-blue">Consolidate financial data from multiple sources and categorize transactions up to
     2 years of history. Analyze reports to reconcile activities in your account.
 </div>
                     </div>

@@ -9,6 +9,7 @@
 .heading {
     @apply leading-tight;
     font-family: var(--heading-font-family);
+    font-size: var(--m-heading);
     text-align: center;
 }
 
@@ -55,4 +56,20 @@
 
 .text-under-image-section {
     text-align: center;
+}
+
+.text-under-image-section>div:last-child>div:first-child {
+    @apply big-heading mb-4;
+}
+
+.text-under-image-section>div:last-child>div:last-child {
+    @apply  leading-7;
+}
+
+.pro>div:nth-child(1){
+    @apply inline-block mb-8;
+}
+
+.pro>div:nth-child(2) {
+    font-size: var(--m-heading);
 }
