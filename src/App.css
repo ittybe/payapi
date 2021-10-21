@@ -1,7 +1,28 @@
-.navigation {
+.nav-top {
     @apply hidden flex-row items-center flex-1;
 }
 
-.navigation>ul>li {
+.nav-top>ul>li {
     @apply m-5;
+}
+
+
+
+footer {
+    background-color: var(--mirage-blue)
+}
+footer .logo {
+    filter: brightness(1000%);
+}
+
+.nav-bottom {
+    @apply font-bold;
+    color: var(--gray);
+}
+.nav-bottom li {
+    @apply m-6;
+}
+
+.social-media img {
+    @apply m-4;
 }

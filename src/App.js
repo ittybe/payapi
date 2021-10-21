@@ -13,6 +13,10 @@ import logo from "./assets/shared/desktop/logo.svg"
 // import closeMenu from "./assets/shared/mobile/close.svg"
 import menu from "./assets/shared/mobile/menu.svg"
 
+import facebook from "./assets/shared/desktop/facebook.svg"
+import linkedin from "./assets/shared/desktop/linkedin.svg"
+import twitter from "./assets/shared/desktop/twitter.svg"
+
 export class App extends react.Component {
     render() {
         return (
@@ -24,7 +28,7 @@ export class App extends react.Component {
                                 <img src={logo} alt="logo" />
                             </Link>
                         </div>
-                        <nav className="hidden navigation">
+                        <nav className="hidden nav-top">
                             <ul className="flex flex-row items-center mx-auto">
                                 <li>
                                     <Link to="pricing">Pricing</Link>
@@ -60,15 +64,15 @@ export class App extends react.Component {
                             </Route>
                         </Switch>
                     </div>
-                    <footer>
+                    <footer className="text-center">
                         {/* logo */}
-                        <div>
+                        <div className="logo inline-block">
                             <Link to="/">
                                 <img src={logo} alt="logo" />
                             </Link>
                         </div>
                         {/* links */}
-                        <nav>
+                        <nav className="nav-bottom">
                             <ul>
                                 <li>
                                     <Link to="pricing">Pricing</Link>
@@ -82,15 +86,15 @@ export class App extends react.Component {
                             </ul>
                         </nav>
                         {/* social media */}
-                        <div>
+                        <div className="social-media flex flex-row justify-center">
                             <a href="#">
-
+                                <img src={facebook} alt="" />
                             </a>
                             <a href="#">
-
+                                <img src={linkedin} alt="" />
                             </a>
                             <a href="#">
-                                <img src="" alt="" />
+                                <img src={twitter} alt="" />
                             </a>
                         </div>
                     </footer>
