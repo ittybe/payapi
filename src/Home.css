@@ -6,6 +6,12 @@
     margin-right: -30px ; 
 }
 
+.heading {
+    @apply leading-tight;
+    font-family: var(--heading-font-family);
+    text-align: center;
+}
+
 .big-heading {
     @apply leading-tight;
     font-size: var(--m-big-heading);
@@ -45,4 +51,8 @@
 
 .button {
     @apply rounded-full; 
+}
+
+.text-under-image-section {
+    text-align: center;
 }

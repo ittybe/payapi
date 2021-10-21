@@ -10,6 +10,10 @@ import teslaLogo from "./assets/shared/desktop/tesla.svg"
 import hewlettLogo from "./assets/shared/desktop/hewlett-packard.svg"
 import googleLogo from "./assets/shared/desktop/google.svg"
 
+import easyToImp from "./assets/home/desktop/illustration-easy-to-implement.png"
+import simpleUi from "./assets/home/desktop/illustration-simple-ui.svg"
+
+
 export class Home extends react.Component {
     render() {
         return (
@@ -53,25 +57,29 @@ export class Home extends react.Component {
                     </div>
                 </div>
                 {/* easy to implement section*/}
-                <div>
+                <div className="text-under-image-section">
                     {/* image */}
-                    <div></div>
+                    <div className="mb-10">
+                        <img src={easyToImp} alt="l" />
+                    </div>
                     {/* text */}
                     <div>
-                        <div>Easy to implement</div>
-                        <div>Our API comes with just a few lines of code. You’ll be up and running in 
+                        <div className="big-heading text-blue mb-4">Easy to implement</div>
+                        <div className="text-light-blue leading-8">Our API comes with just a few lines of code. You’ll be up and running in 
     no time. We built our documentation page to integrate payments functionality 
     with ease.</div>
                     </div>
                 </div>
                 {/* simple ui & ux */}
-                <div>
+                <div className="text-under-image-section">
                     {/* image */}
-                    <div></div>
+                    <div className="">
+                        <img src={simpleUi} alt="image" />
+                    </div>
                     {/* text */}
                     <div>
-                        <div>Simple UI &amp; UX</div>
-                        <div>
+                        <div className="big-heading text-blue mb-4">Simple UI &amp; UX</div>
+                        <div className="text-light-blue leading-8">
                         Our pre-built form is easy to integrate in your app or website’s checkout 
     flow and designed to optimize conversion.
                         </div>
