@@ -66,6 +66,10 @@
     @apply  leading-7;
 }
 
+.pro {
+    @apply text-center;
+}
+
 .pro>div:nth-child(1){
     @apply inline-block mb-8;
 }

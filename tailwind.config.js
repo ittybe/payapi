@@ -13,7 +13,6 @@ module.exports = {
       "gray": "var(--gray)"
     },
     extend: {
-
     },
   },
   variants: {

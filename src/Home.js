@@ -14,6 +14,8 @@ import easyToImp from "./assets/home/desktop/illustration-easy-to-implement.png"
 import simpleUi from "./assets/home/desktop/illustration-simple-ui.svg"
 
 import personalFinances from "./assets/home/desktop/icon-personal-finances.svg"
+import bankingAndCoverage from "./assets/home/desktop/icon-banking-and-coverage.svg"
+import consumerPayments from "./assets/home/desktop/icon-consumer-payments.svg"
 
 
 export class Home extends react.Component {
@@ -89,9 +91,9 @@ export class Home extends react.Component {
                 </div>
                 {/* pros style it with grid*/}
                 <div className="pros-section">
-                    <div className="pro text-center">
+                    <div className="pro">
                         {/* image */}
-                        <div className="inline-block mb-8">
+                        <div className="">
                             <img src={personalFinances} alt="" />
                         </div>
                         {/* text */}
@@ -100,21 +102,25 @@ export class Home extends react.Component {
     2 years of history. Analyze reports to reconcile activities in your account.
 </div>
                     </div>
-                    <div>
+                    <div className="pro">
                         {/* image */}
-                        <div></div>
+                        <div className="">
+                            <img src={bankingAndCoverage} alt="" />
+                        </div>
                         {/* text */}
-                        <div>Banking &amp; Coverage</div>
-                        <div>With our platform, you can speed up account onboarding and support ongoing payments 
+                        <div className="text-blue font-bold mb-4">Banking &amp; Coverage</div>
+                        <div className="text-light-blue">With our platform, you can speed up account onboarding and support ongoing payments 
     for checking, savings, credit card, and brokerage accounts.
 </div>
                     </div>
-                    <div>
+                    <div className="pro">
                         {/* image */}
-                        <div></div>
+                        <div className="">
+                            <img src={consumerPayments} alt="" />
+                        </div>
                         {/* text */}
-                        <div>Consumer Payments</div>
-                        <div>It’s easier to set up secure bank payments with us through a flow designed with the 
+                        <div className="text-blue font-bold mb-4">Consumer Payments</div>
+                        <div className="text-light-blue">It’s easier to set up secure bank payments with us through a flow designed with the 
     user experience in mind. Customers could instantly authenticate their account.
 </div>
                     </div>
