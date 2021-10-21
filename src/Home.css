@@ -3,7 +3,8 @@
 }
 
 .start-section .img-wrapper img {
-    margin-right: -30px ; 
+    @apply mx-auto;
+    width: 128px;
 }
 
 .heading {
@@ -58,10 +59,20 @@
     text-align: center;
 }
 
+/* image wrapper*/
+.text-under-image-section>div:first-child {
+    @apply inline-block;
+}
+
+.text-under-image-section>div:first-child>img{ 
+    width: 328px;
+}
+
+/* heading */
 .text-under-image-section>div:last-child>div:first-child {
     @apply big-heading mb-4;
 }
-
+/* text */
 .text-under-image-section>div:last-child>div:last-child {
     @apply  leading-7;
 }
@@ -69,11 +80,11 @@
 .pro {
     @apply text-center;
 }
-
+/* image wrapper */
 .pro>div:nth-child(1){
     @apply inline-block mb-8;
 }
-
+/* heading */
 .pro>div:nth-child(2) {
     font-size: var(--m-heading);
 }
