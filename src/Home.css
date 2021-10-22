@@ -1,3 +1,8 @@
+.home-margin-between-sections {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 .start-section {
     margin-top: 30px;
     margin-bottom: 80px;
@@ -61,6 +66,7 @@
 }
 
 .text-under-image-section {
+    @apply home-margin-between-sections;
     text-align: center;
 }
 
@@ -82,14 +88,22 @@
     @apply  leading-7;
 }
 
-.pro {
-    @apply text-center;
+.pros-section {
+    @apply home-margin-between-sections;
 }
-/* image wrapper */
+
+.pro {
+    @apply text-center mt-12;
+}
+/* image wrapper, 3 elements, no style classes*/
 .pro>div:nth-child(1){
-    @apply inline-block mb-8;
+    @apply inline-block mb-2;
 }
 /* heading */
 .pro>div:nth-child(2) {
     font-size: var(--m-heading);
+}
+
+.email-section {
+    @apply home-margin-between-sections
 }
