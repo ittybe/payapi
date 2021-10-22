@@ -12,6 +12,7 @@
     padding-right: var(--m-page-margin-x);
 }
 body {
+    @apply leading-loose;
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
     background-color: var(--body-bg-color);

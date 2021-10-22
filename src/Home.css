@@ -1,3 +1,8 @@
+.start-section {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
 .start-section .img-wrapper img {
     @apply mx-auto;
     width: 128px;
@@ -34,12 +39,15 @@
     row-gap: 45px;
     max-width: 350px;
     margin: auto;
+    margin-bottom: 56px;
 }
 .logos>div {
     @apply flex justify-start items-center;
 }
 
 .business-allies {
+    padding-top: 80px;
+    padding-bottom: 80px; 
     background-color: var(--mirage-blue);
 }
 

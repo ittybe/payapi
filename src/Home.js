@@ -50,8 +50,8 @@ export class Home extends react.Component {
                     </div>
                     {/* text */}
                     <div className="text-center">
-                        <div className="big-heading text-white">Who we work with</div>
-                        <div className="text-gray"> Today, millions of people around the world have successfully connected 
+                        <div className="big-heading text-white mb-4">Who we work with</div>
+                        <div className="text-gray mb-16"> Today, millions of people around the world have successfully connected 
     their accounts to apps they love using our API. We provide developers 
     with the tools they need to create easy and accessible experiences 
     for their users.</div>
