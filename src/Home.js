@@ -25,7 +25,7 @@ export class Home extends react.Component {
                 {/* start section */}
                 <div className="start-section page-margin-x">
                     {/* image */}
-                    <div className="img-wrapper">
+                    <div className="img-wrapper mb-6">
                         <img src={phoneMockup} alt="" />
                     </div>
                     <div>
