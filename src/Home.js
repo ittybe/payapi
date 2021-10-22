@@ -42,8 +42,8 @@ export class Home extends react.Component {
                     {/* images */}
                     <div className="logos">
                         <div><img src={teslaLogo} alt="l" /></div>
-                        <div><img src={microsoftLogo} alt="l" /></div>
                         <div><img src={oracleLogo} alt="l" /></div>
+                        <div><img src={microsoftLogo} alt="l" /></div>
                         <div><img src={nvidiaLogo} alt="l" /></div>
                         <div><img src={hewlettLogo} alt="l" /></div>
                         <div><img src={googleLogo} alt="l" /></div>
