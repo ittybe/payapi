@@ -1,3 +1,4 @@
+
 .nav-top {
     @apply hidden flex-row items-center flex-1;
 }
@@ -6,9 +7,13 @@
     @apply m-5;
 }
 
-
+header {
+    margin-top: var(--m-page-margin-y);
+}
 
 footer {
+    padding-top: var(--m-page-margin-y);
+    padding-bottom: var(--m-page-margin-y);
     background-color: var(--mirage-blue)
 }
 footer .logo {

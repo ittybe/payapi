@@ -3,6 +3,14 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap');
 
+.page-margin-x {
+    margin-left: var(--m-page-margin-x);
+    margin-right: var(--m-page-margin-x);
+}
+.page-padding-x {
+    padding-left: var(--m-page-margin-x);
+    padding-right: var(--m-page-margin-x);
+}
 body {
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);

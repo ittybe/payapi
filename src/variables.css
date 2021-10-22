@@ -1,3 +1,5 @@
+
+
 :root {
     /* colors */
     --primary-pink:rgb(186, 66, 112);
@@ -24,4 +26,7 @@
     /* font size */
     --m-big-heading: 32px;
     --m-heading: 18px;
+
+    --m-page-margin-y: 30px;
+    --m-page-margin-x: 30px;
 }

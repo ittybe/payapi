@@ -23,7 +23,7 @@ export class Home extends react.Component {
         return (
             <div>
                 {/* start section */}
-                <div className="start-section">
+                <div className="start-section page-margin-x">
                     {/* image */}
                     <div className="img-wrapper">
                         <img src={phoneMockup} alt="" />
@@ -38,7 +38,7 @@ export class Home extends react.Component {
                     </div>                    
                 </div>
                 {/* business allies section */}
-                <div className="business-allies"> 
+                <div className="business-allies page-padding-x"> 
                     {/* images */}
                     <div className="logos">
                         <div><img src={teslaLogo} alt="l" /></div>
@@ -61,7 +61,7 @@ export class Home extends react.Component {
                     </div>
                 </div>
                 {/* easy to implement section*/}
-                <div className="text-under-image-section">
+                <div className="text-under-image-section page-margin-x">
                     {/* image */}
                     <div className="mb-10">
                         <img src={easyToImp} alt="l" />
@@ -75,7 +75,7 @@ export class Home extends react.Component {
                     </div>
                 </div>
                 {/* simple ui & ux */}
-                <div className="text-under-image-section">
+                <div className="text-under-image-section page-margin-x">
                     {/* image */}
                     <div className="">
                         <img src={simpleUi} alt="image" />
@@ -90,7 +90,7 @@ export class Home extends react.Component {
                     </div>
                 </div>
                 {/* pros style it with grid*/}
-                <div className="pros-section">
+                <div className="pros-section page-margin-x">
                     <div className="pro">
                         {/* image */}
                         <div className="">
@@ -125,7 +125,7 @@ export class Home extends react.Component {
 </div>
                     </div>
                 </div>
-                <div className="text-center">
+                <div className="email-section text-center page-margin-x">
                     <div className="big-heading text-blue">Ready to start?</div>
                     {/* email component */}
                     <div></div>

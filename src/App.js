@@ -22,7 +22,7 @@ export class App extends react.Component {
         return (
             <Router>
                 <div className="page-wrapper">
-                    <header className="flex flex-row">
+                    <header className="flex flex-row page-margin-x">
                         <div className="flex items-center justify-center">
                             <Link to="/">
                                 <img src={logo} alt="logo" />
@@ -64,7 +64,7 @@ export class App extends react.Component {
                             </Route>
                         </Switch>
                     </div>
-                    <footer className="text-center">
+                    <footer className="text-center page-padding-x">
                         {/* logo */}
                         <div className="logo inline-block">
                             <Link to="/">
