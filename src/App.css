@@ -1,10 +1,11 @@
 
 .nav-top {
-    @apply hidden flex-row items-center flex-1;
+    @apply hidden;
 }
 
-.nav-top>ul>li {
-    @apply m-5;
+
+.show-hide-menu {
+    @apply  ml-auto;
 }
 
 header {
@@ -52,3 +53,25 @@ footer::after {
     @apply m-4;
 }
 
+@media screen and (min-width: 768px) {
+    .nav-top {
+        @apply flex-1;
+        display: flex;
+    }
+    .nav-top ul {
+        @apply mx-auto;
+    }
+    .nav-top li {
+        @apply mx-5 font-bold;
+        color: var(--dark-blue)
+
+    }
+    .nav-top button {
+        @apply ml-auto rounded-full font-bold py-2 px-6;
+        background: var(--primary-pink);
+        color: white;
+    }
+    .show-hide-menu {
+        display: none;
+    }
+}

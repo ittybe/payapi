@@ -10,10 +10,10 @@
     --light-blue:rgb(108, 130, 148);
     --mirage-blue:rgb(27, 38, 47);
     --charm-pink:rgb(218, 109, 151);
-
     --body-bg-color: #EDF3F8;
     /* circle color */
     --lighter-blue: #D2DBE3;
+    --dark-blue: #657C8F;
     --light-mirage-blue: #1F2D38;
 
     /* fonts */
@@ -29,8 +29,10 @@
     /* font size */
     --m-big-heading: 32px;
     --m-heading: 18px;
-    --t-big-heading: ;
-    --t-heading: ;
+    --m-home-big-heading: 32px;
+    --m-home-heading: 18px;
+    --t-home-big-heading: 48px;
+    --t-home-heading: 18px;
 
     --m-page-margin-y: 30px;
     --m-page-margin-x: 30px;

@@ -28,8 +28,8 @@ export class App extends react.Component {
                                 <img src={logo} alt="logo" />
                             </Link>
                         </div>
-                        <nav className="hidden nav-top">
-                            <ul className="flex flex-row items-center mx-auto">
+                        <nav className="nav-top">
+                            <ul className="flex flex-row items-center">
                                 <li>
                                     <Link to="pricing">Pricing</Link>
                                 </li>
@@ -40,11 +40,11 @@ export class App extends react.Component {
                                     <Link to="contact">Contact</Link>
                                 </li>
                             </ul>
-                            <button className="ml-auto">
+                            <button className="">
                                 Schedule a Demo
                             </button>
                         </nav>
-                        <button className="sm:hidden ml-auto" onClick="showHideMenu">
+                        <button className="show-hide-menu" onClick="showHideMenu">
                             <img src={menu} alt="" />
                         </button>
                     </header>
