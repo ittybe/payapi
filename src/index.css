@@ -3,6 +3,13 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap');
 
+.circle {
+    @apply rounded-full;
+    position: absolute;
+    height: 780px;
+    width: 780px;
+}
+
 .page-margin-x {
     margin-left: var(--m-page-margin-x);
     margin-right: var(--m-page-margin-x);
@@ -13,6 +20,7 @@
 }
 body {
     @apply leading-loose;
+    position: relative;
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
     background-color: var(--body-bg-color);

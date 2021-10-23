@@ -12,6 +12,9 @@
     --charm-pink:rgb(218, 109, 151);
 
     --body-bg-color: #EDF3F8;
+    /* circle color */
+    --lighter-blue: #D2DBE3;
+    --light-mirage-blue: #1F2D38;
 
     /* fonts */
 
@@ -26,6 +29,8 @@
     /* font size */
     --m-big-heading: 32px;
     --m-heading: 18px;
+    --t-big-heading: ;
+    --t-heading: ;
 
     --m-page-margin-y: 30px;
     --m-page-margin-x: 30px;

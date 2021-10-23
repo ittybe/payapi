@@ -21,7 +21,7 @@ import consumerPayments from "./assets/home/desktop/icon-consumer-payments.svg"
 export class Home extends react.Component {
     render() {
         return (
-            <div>
+            <div className="home-page">
                 {/* start section */}
                 <div className="start-section page-margin-x">
                     {/* image */}

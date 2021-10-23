@@ -14,10 +14,30 @@ header {
 footer {
     padding-top: var(--m-page-margin-y);
     padding-bottom: var(--m-page-margin-y);
-    background-color: var(--mirage-blue)
+    background-color: var(--mirage-blue);
+    position: relative;
+    overflow: hidden;
 }
 footer .logo {
     filter: brightness(1000%);
+}
+footer *{
+    position: relative;
+    z-index: 10;
+}
+/* circle */
+footer::after {
+    @apply rounded-full;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 780px;
+    width: 780px;
+    background-color: var(--light-mirage-blue);
+    left: 50%; 
+    transform: translate(-50%, 0);
+    top: 165px;
+    z-index: 0;
 }
 
 .nav-bottom {
@@ -25,9 +45,10 @@ footer .logo {
     color: var(--gray);
 }
 .nav-bottom li {
-    @apply m-6;
+    @apply m-5;
 }
 
 .social-media img {
     @apply m-4;
 }
+
