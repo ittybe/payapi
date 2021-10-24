@@ -30,7 +30,7 @@ export class Home extends react.Component {
                     </div>
                     <div>
                         {/* heading */}
-                        <div className="big-heading text-blue">Start building with our APIs for absolutely free.</div>
+                        <div className="big-heading text-blue big-heading--main">Start building with our APIs for absolutely free.</div>
                         {/* email component */}
                         <div></div>
                         {/* under text */}

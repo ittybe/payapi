@@ -92,8 +92,13 @@ footer::after {
         margin-left: auto;
     }
     footer::after {
-        left: 350px;
+        left: 400px;
         transform: initial;
         top: -100px;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    
 }

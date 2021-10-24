@@ -192,4 +192,19 @@
         width: 88px;
         margin: auto;
     }
+    .start-section .img-wrapper img {
+        width: 155px;
+    }
+
+    .start-section {
+        @apply mx-auto;
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .big-heading--main {
+        font-size: var(--d-home-main-heading);
+    }
+    
 }
