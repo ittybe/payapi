@@ -49,7 +49,7 @@ footer::after {
     @apply m-5;
 }
 
-.social-media img {
+.social-media a {
     @apply m-4;
 }
 
@@ -73,5 +73,27 @@ footer::after {
     }
     .show-hide-menu {
         display: none;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-bottom {
+        @apply mx-auto;
+    }
+
+    .nav-bottom>ul {
+        display: flex;
+    }
+
+    .social-media {
+        margin-left: auto;
+    }
+    footer::after {
+        left: 350px;
+        transform: initial;
+        top: -100px;
     }
 }

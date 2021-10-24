@@ -167,4 +167,29 @@
         grid-template-rows: repeat(2, var(--logo-height));
         min-width: 600px;
     }
+    .text-under-image-section {
+        max-width: 573px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-margin-between-sections {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .pros-section {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .pro {
+        @apply mx-2;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 110px 50px auto;
+    }
+    .pro img {
+        height: 88px;
+        width: 88px;
+        margin: auto;
+    }
 }
