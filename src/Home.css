@@ -53,10 +53,10 @@
 }
 
 .logos {
-    --logo-height: 27px;
+    --logo-height: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: var(--logo-height);
+    grid-template-rows: repeat(3, var(--logo-height));
     column-gap: 20px;
     row-gap: 45px;
     max-width: 350px;
@@ -152,5 +152,19 @@
 @media screen and (min-width: 768px) {
     .big-heading {
         font-size: var(--t-home-big-heading);
+    }
+    .start-section::after {
+        height: 949px;
+        width: 949px;
+        top: -670px;
+    }
+    .business-allies__text {
+        max-width: 500px;
+        margin: auto;
+    }
+    .logos {
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(2, var(--logo-height));
+        min-width: 600px;
     }
 }

@@ -49,7 +49,7 @@ export class Home extends react.Component {
                         <div><img src={googleLogo} alt="l" /></div>
                     </div>
                     {/* text */}
-                    <div className="text-center">
+                    <div className="text-center business-allies__text">
                         <div className="big-heading text-white mb-4">Who we work with</div>
                         <div className="text-gray mb-16"> Today, millions of people around the world have successfully connected 
     their accounts to apps they love using our API. We provide developers 
