@@ -81,7 +81,7 @@
     position: relative;
 }
 
-.business-allies>.logos>div>img {
+.logos>div>img {
     /* white */
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(194deg) brightness(109%) contrast(112%);
 }
@@ -112,20 +112,20 @@
 }
 
 /* image wrapper*/
-.text-under-image-section>div:first-child {
+.text-under-image-section__image-wrapper {
     @apply inline-block;
 }
 
-.text-under-image-section>div:first-child>img{ 
+.text-under-image-section__image{ 
     width: 328px;
 }
 
 /* heading */
-.text-under-image-section>div:last-child>div:first-child {
+.text-under-image-section__heading {
     @apply big-heading mb-4;
 }
 /* text */
-.text-under-image-section>div:last-child>div:last-child {
+.text-under-image-section__text {
     @apply  leading-7;
 }
 
@@ -202,9 +202,63 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1248px) {
     .big-heading--main {
         font-size: var(--d-home-main-heading);
+        text-align: left;
     }
-    
+    .start-section {
+        display: flex;
+        max-width: var(--max-width-home-desktop);
+        flex-direction: row-reverse;
+        margin-top: 78px;
+        margin-bottom: 78px;
+
+    }
+    .start-section .img-wrapper {
+        @apply mx-auto flex-auto;
+        display: flex;
+    }
+    .start-section .img-wrapper img {
+        width: 255px;
+    }
+    .start-section__info {
+        @apply my-auto;
+        max-width: 568px;
+        height: min-content;
+    }
+    .under-text {
+        @apply ml-4;
+        text-align: left;
+
+    }
+    .business-allies__content-wrapper {
+        @apply mx-auto;
+        max-width: var(--max-width-home-desktop);
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .business-allies__text {
+        margin: auto;
+        text-align: left;
+    }
+    .business-allies__text > .big-heading {
+        text-align: left;
+    }
+    .logos {
+        @apply m-auto;
+        min-width: initial;
+    }
+    .business-allies__text-info {
+        @apply mb-8;
+    }
+    .text-under-image-section__content-wrapper {
+        @apply flex;
+    }
+    .text-under-image-section__content-wrapper--first {
+        flex-direction: row;
+    }
+    .text-under-image-section__content-wrapper--second {
+        flex-direction: row-reverse;
+    }
 }
