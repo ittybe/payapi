@@ -65,38 +65,41 @@ export class App extends react.Component {
                         </Switch>
                     </div>
                     <footer className="text-center page-padding-x">
-                        {/* logo */}
-                        <div className="logo inline-block">
-                            <Link to="/">
-                                <img src={logo} alt="logo" />
-                            </Link>
+                        <div className="footer__content-wrapper">
+                            {/* logo */}
+                            <div className="logo inline-block">
+                                <Link to="/">
+                                    <img src={logo} alt="logo" />
+                                </Link>
+                            </div>
+                            {/* links */}
+                            <nav className="nav-bottom">
+                                <ul>
+                                    <li>
+                                        <Link to="pricing">Pricing</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="about">About</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="contact">Contact</Link>
+                                    </li>
+                                </ul>
+                            </nav>
+                            {/* social media */}
+                            <div className="social-media flex flex-row justify-center">
+                                <a href="#">
+                                    <img src={facebook} alt="" />
+                                </a>
+                                <a href="#">
+                                    <img src={linkedin} alt="" />
+                                </a>
+                                <a href="#">
+                                    <img src={twitter} alt="" />
+                                </a>
+                            </div>
                         </div>
-                        {/* links */}
-                        <nav className="nav-bottom">
-                            <ul>
-                                <li>
-                                    <Link to="pricing">Pricing</Link>
-                                </li>
-                                <li>
-                                    <Link to="about">About</Link>
-                                </li>
-                                <li>
-                                    <Link to="contact">Contact</Link>
-                                </li>
-                            </ul>
-                        </nav>
-                        {/* social media */}
-                        <div className="social-media flex flex-row justify-center">
-                            <a href="#">
-                                <img src={facebook} alt="" />
-                            </a>
-                            <a href="#">
-                                <img src={linkedin} alt="" />
-                            </a>
-                            <a href="#">
-                                <img src={twitter} alt="" />
-                            </a>
-                        </div>
+
                     </footer>
                 </div>
             </Router>

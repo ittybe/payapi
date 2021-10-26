@@ -75,7 +75,7 @@ footer::after {
         display: none;
     }
 
-    footer {
+    .footer__content-wrapper {
         display: flex;
         align-items: center;
     }
@@ -105,5 +105,10 @@ footer::after {
     }
     header.page-margin-x {
         @apply mx-auto;
+    }
+
+    .footer__content-wrapper {
+        @apply mx-auto;
+        max-width: var(--max-width-home-desktop);
     }
 }

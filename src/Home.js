@@ -64,14 +64,14 @@ export class Home extends react.Component {
                 </div>
                 {/* easy to implement section*/}
                 <div className="text-under-image-section page-margin-x">
-                    <div className="text-under-image-section__content-wrapper text-under-image-section__content-wrapper--first">
+                    <div className="text-under-image-section__content-wrapper ">
                         {/* image */}
                         <div className="text-under-image-section__image-wrapper mb-10">
                             <img className="text-under-image-section__image" src={easyToImp} alt="l" />
                         </div>
                         {/* text */}
-                        <div className="text-under-image-section__info-wrapper">
-                            <div className="text-under-image-section__heading text-blue">Easy to implement</div>
+                        <div className="text-under-image-section__info-wrapper text-under-image-section__info-wrapper--not-reversed">
+                            <div className="text-under-image-section__heading text-under-image-section__heading--text-left text-blue">Easy to implement</div>
                             <div className="text-under-image-section__text text-light-blue">Our API comes with just a few lines of code. You’ll be up and running in
                                 no time. We built our documentation page to integrate payments functionality
                                 with ease.</div>
@@ -79,14 +79,14 @@ export class Home extends react.Component {
                     </div>
                 </div>
                 <div className="text-under-image-section page-margin-x">
-                    <div className="text-under-image-section__content-wrapper text-under-image-section__content-wrapper--second">
+                    <div className="text-under-image-section__content-wrapper ">
                         {/* image */}
-                        <div className="text-under-image-section__image-wrapper mb-10">
-                            <img className="text-under-image-section__image" src={simpleUi} alt="l" />
+                        <div className="text-under-image-section__image-wrapper text-under-image-section__image-wrapper--reverse mb-10">
+                            <img className="text-under-image-section__image text-under-image-section__image--second" src={simpleUi} alt="l" />
                         </div>
                         {/* text */}
-                        <div className="text-under-image-section__info-wrapper">
-                            <div className="text-under-image-section__heading text-blue">Simple UI &amp; UX</div>
+                        <div className="text-under-image-section__info-wrapper text-under-image-section__info-wrapper--reverse">
+                            <div className="text-under-image-section__heading text-under-image-section__heading--text-left text-blue">Simple UI &amp; UX</div>
                             <div className="text-under-image-section__text text-light-blue">Our pre-built form is easy to integrate in your app or website’s checkout
                                 flow and designed to optimize conversion.</div>
                         </div>
@@ -98,10 +98,10 @@ export class Home extends react.Component {
                     <div className="pro">
                         {/* image */}
                         <div className="">
-                            <img src={personalFinances} alt="" />
+                            <img className="pro__image" src={personalFinances} alt="" />
                         </div>
                         {/* text */}
-                        <div className="text-blue font-bold mb-4">Personal Finances</div>
+                        <div className="pro__heading text-blue font-bold mb-4">Personal Finances</div>
                         <div className="text-light-blue">Consolidate financial data from multiple sources and categorize transactions up to
                             2 years of history. Analyze reports to reconcile activities in your account.
                         </div>
@@ -109,10 +109,10 @@ export class Home extends react.Component {
                     <div className="pro">
                         {/* image */}
                         <div className="">
-                            <img src={bankingAndCoverage} alt="" />
+                            <img className="pro__image" src={bankingAndCoverage} alt="" />
                         </div>
                         {/* text */}
-                        <div className="text-blue font-bold mb-4">Banking &amp; Coverage</div>
+                        <div className="pro__heading text-blue font-bold mb-4">Banking &amp; Coverage</div>
                         <div className="text-light-blue">With our platform, you can speed up account onboarding and support ongoing payments
                             for checking, savings, credit card, and brokerage accounts.
                         </div>
@@ -120,10 +120,10 @@ export class Home extends react.Component {
                     <div className="pro">
                         {/* image */}
                         <div className="">
-                            <img src={consumerPayments} alt="" />
+                            <img className="pro__image" src={consumerPayments} alt="" />
                         </div>
                         {/* text */}
-                        <div className="text-blue font-bold mb-4">Consumer Payments</div>
+                        <div className="pro__heading text-blue font-bold mb-4">Consumer Payments</div>
                         <div className="text-light-blue">It’s easier to set up secure bank payments with us through a flow designed with the
                             user experience in mind. Customers could instantly authenticate their account.
                         </div>
