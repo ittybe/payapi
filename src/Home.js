@@ -78,7 +78,7 @@ export class Home extends react.Component {
                         </div>
                     </div>
                 </div>
-                <div className="text-under-image-section page-margin-x">
+                <div className="text-under-image-section text-under-image-section--second page-margin-x">
                     <div className="text-under-image-section__content-wrapper ">
                         {/* image */}
                         <div className="text-under-image-section__image-wrapper text-under-image-section__image-wrapper--reverse mb-10">

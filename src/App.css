@@ -111,4 +111,8 @@ footer::after {
         @apply mx-auto;
         max-width: var(--max-width-home-desktop);
     }
+    footer::after {
+        left: initial;
+        right: -130px;
+    }
 }

@@ -256,6 +256,25 @@
     .text-under-image-section {
         @apply my-0;
         max-width: var(--max-width-home-desktop);
+    
+    }
+    .text-under-image-section--second {
+        position: relative;
+    }
+    .text-under-image-section--second * {
+        position: relative;
+        z-index: 10;
+    }
+    .text-under-image-section--second::after {
+        @apply rounded-full;
+        content: "";
+        height: 780px;
+        width: 780px;
+        background-color: var(--lighter-blue);
+        position: absolute;
+        z-index: 0;
+        top: -180px;
+        right: -500px;
     }
     .text-under-image-section__info-wrapper {
         @apply flex justify-center flex-col;
@@ -308,5 +327,19 @@
     }
     .pro__heading {
         @apply mb-3 mt-7;
+    }
+    .start-section::after {
+        width: 780px;
+        height: 780px;
+        top: -250px;
+        right: -50px;
+        left: initial; 
+        transform: initial;
+    }
+    .business-allies::after {
+        top: -400px;
+        left: -100px;
+
+        transform: initial;
     }
 }
