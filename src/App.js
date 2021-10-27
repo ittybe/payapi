@@ -11,41 +11,53 @@ import './App.css';
 
 import logo from "./assets/shared/desktop/logo.svg"
 // import closeMenu from "./assets/shared/mobile/close.svg"
-import menu from "./assets/shared/mobile/menu.svg"
 
 import facebook from "./assets/shared/desktop/facebook.svg"
 import linkedin from "./assets/shared/desktop/linkedin.svg"
 import twitter from "./assets/shared/desktop/twitter.svg"
 
 export class App extends react.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isMenuHidden: true
+        }
+    }
+    showHideMenu() {
+        const isMenuHidden = this.state.isMenuHidden;
+        this.setState(
+            {
+                isMenuHidden: !isMenuHidden
+            }
+        )
+    }
     render() {
         return (
             <Router>
                 <div className="page-wrapper">
-                    <header className="flex flex-row page-margin-x">
+                    <header className="header flex flex-row page-margin-x">
                         <div className="flex items-center justify-center">
                             <Link to="/">
                                 <img src={logo} alt="logo" />
                             </Link>
                         </div>
-                        <nav className="nav-top">
-                            <ul className="flex flex-row items-center">
-                                <li>
+                        <nav className={`header__nav ${(this.state.isMenuHidden ? "hidden" : "")}`}>
+                            <ul className="header__link-list flex flex-row items-center">
+                                <li className="header__link">
                                     <Link to="pricing">Pricing</Link>
                                 </li>
-                                <li>
+                                <li className="header__link">
                                     <Link to="about">About</Link>
                                 </li>
-                                <li>
+                                <li className="header__link">
                                     <Link to="contact">Contact</Link>
                                 </li>
                             </ul>
-                            <button className="">
+                            <button className="header__schedule-button">
                                 Schedule a Demo
                             </button>
                         </nav>
-                        <button className="show-hide-menu" onClick="showHideMenu">
-                            <img src={menu} alt="" />
+                        <button className={`header__show-hide-menu ${this.state.isMenuHidden ? "" : "header__show-hide-menu--hide-menu"}`} onClick={()=> this.showHideMenu()}>
                         </button>
                     </header>
                     <div>

@@ -1,13 +1,3 @@
-
-.nav-top {
-    @apply hidden;
-}
-
-
-.show-hide-menu {
-    @apply  ml-auto;
-}
-
 header {
     margin-top: var(--m-page-margin-y);
 }
@@ -53,20 +43,69 @@ footer::after {
     @apply m-4;
 }
 
+.header__show-hide-menu {
+    @apply ml-auto my-auto;
+    background-image: url("./assets/shared/mobile/menu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 28px;
+    height: 17px;
+    position: relative;
+    z-index: 101;
+}
+.header__show-hide-menu--hide-menu {
+    background-image: url("./assets/shared/mobile/close.svg");
+}
+.header__link-list {
+    @apply pt-28;
+    display: flex;
+    flex-direction: column;
+}
+.header__link {
+    @apply mb-4;
+}
+.header__nav {
+    position: absolute;
+    height: 100vh;
+    background-color: var(--mirage-blue);
+    top: 0;
+    right: 0;
+    color: var(--gray);
+    font-weight: bold;
+    width: 70vw;
+    text-align: center;
+    z-index: 100;
+}
+.header__nav::before {
+    content: "";
+    height: 1px;
+    width: calc(100% - (var(--m-page-margin-x) * 2));
+    background-color: var(--smoke-gray);
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.header__schedule-button {
+    @apply inline-block rounded-full font-bold py-2 px-6;
+    background: var(--primary-pink);
+    color: white;
+}
 @media screen and (min-width: 768px) {
-    .nav-top {
+    .header__nav {
         @apply flex-1;
         display: flex;
     }
-    .nav-top ul {
+    .header__nav ul {
         @apply mx-auto;
     }
-    .nav-top li {
+    .header__nav li {
         @apply mx-5 font-bold;
         color: var(--dark-blue)
 
     }
-    .nav-top button {
+    .header__schedule-button{
         @apply ml-auto rounded-full font-bold py-2 px-6;
         background: var(--primary-pink);
         color: white;
