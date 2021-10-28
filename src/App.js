@@ -34,7 +34,7 @@ export class App extends react.Component {
     render() {
         return (
             <Router>
-                <div className="page-wrapper">
+                <div className={`page-wrapper ${this.state.isMenuHidden ? "" : "scroll-lock"}`}>
                     <header className="header flex flex-row page-margin-x">
                         <div className="flex items-center justify-center">
                             <Link to="/">
@@ -54,6 +54,22 @@ export class App extends react.Component {
                                 </li>
                             </ul>
                             <button className="header__schedule-button">
+                                Schedule a Demo
+                            </button>
+                        </nav>
+                        <nav className={`header__nav-mobile ${(this.state.isMenuHidden ? "hidden" : "")}`}>
+                            <ul className="header__link-list-mobile flex flex-row items-center">
+                                <li className="header__link-mobile">
+                                    <Link to="pricing">Pricing</Link>
+                                </li>
+                                <li className="header__link-mobile">
+                                    <Link to="about">About</Link>
+                                </li>
+                                <li className="header__link-mobile">
+                                    <Link to="contact">Contact</Link>
+                                </li>
+                            </ul>
+                            <button className="header__schedule-button-mobile">
                                 Schedule a Demo
                             </button>
                         </nav>
