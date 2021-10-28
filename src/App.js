@@ -22,6 +22,15 @@ export class App extends react.Component {
         this.state = {
             isMenuHidden: true
         }
+        this.onResizeSetIsMenuHidden = this.onResizeSetIsMenuHidden.bind(this)
+        window.onresize = this.onResizeSetIsMenuHidden;
+    }
+    onResizeSetIsMenuHidden() {
+        if (window.innerWidth >= 768) {
+            this.setState({
+                isMenuHidden: true
+            }) 
+        }
     }
     showHideMenu() {
         const isMenuHidden = this.state.isMenuHidden;
