@@ -29,7 +29,10 @@
     @apply mx-auto;
     width: 128px;
 }
-
+.start-section__image {
+    /* @apply filter drop-shadow-2xl; */
+    filter: drop-shadow(0 25px 25px rgba(27, 38, 47, 0.3));
+ }
 .heading {
     @apply leading-tight;
     font-family: var(--heading-font-family);
@@ -118,6 +121,8 @@
 
 .text-under-image-section__image{ 
     width: 328px;
+    filter: drop-shadow(0 25px 25px rgba(27, 38, 47, 0.3));
+
 }
 
 /* heading */
