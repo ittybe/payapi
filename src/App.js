@@ -6,7 +6,7 @@ import {
     Link
 } from "react-router-dom";
 import Home from "./Home";
-import About from "./About";
+import Pricing from "./Pricing";
 import './App.css';
 
 import logo from "./assets/shared/desktop/logo.svg"
@@ -91,10 +91,10 @@ export class App extends react.Component {
 
                             </Route>
                             <Route path="/pricing">
-
+                                <Pricing/>
                             </Route>
                             <Route path="/about">
-                                <About />
+                                {/* <About /> */}
                             </Route>
                             <Route path="/">
                                 <Home />

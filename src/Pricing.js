@@ -5,7 +5,7 @@ export class Pricing extends react.Component {
     render() {
         return (
             <div className="pricing-page">
-                <div className="pricing-section">
+                <div className="pricing-section page-margin-x">
                     <div className="plan">
                         <div className="plan__heading">Free Plan</div>
                         <div className="plan__about">Build and test using our core set of products with up to 100 API requests</div>
@@ -60,7 +60,7 @@ export class Pricing extends react.Component {
                         <div className="btn btn--hollow btn--blue">Request Access</div>
                     </div>
                 </div>
-                <div className="email-section ">
+                <div className="email-section page-margin-x">
                     <div className="email-section__heading">Ready to start?</div>
                 </div>
             </div>
@@ -68,4 +68,4 @@ export class Pricing extends react.Component {
     }
 }
 
-export default About;
+export default Pricing;

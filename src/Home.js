@@ -130,7 +130,7 @@ export class Home extends react.Component {
                     </div>
                 </div>
                 <div className="email-section text-center page-margin-x">
-                    <div className="big-heading text-blue">Ready to start?</div>
+                    <div className="email-section__heading">Ready to start?</div>
                     {/* email component */}
                     <div></div>
                 </div>
