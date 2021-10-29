@@ -82,6 +82,10 @@ footer::after {
     width: 70vw;
     text-align: center;
     z-index: 100;
+    overflow: hidden;
+}
+.header__nav-mobile * {
+    z-index: 10;
 }
 .header__nav-mobile::before {
     content: "";
@@ -91,8 +95,25 @@ footer::after {
     position: absolute;
     top: 80px;
     left: 50%;
+    z-index: 10;
     transform: translate(-50%, 0);
 }
+.header__nav-mobile::after {
+    @apply rounded-full;
+    content: "";
+    display: block;
+    height: 780px;
+    width: 780px;
+    
+    position: absolute;
+    z-index: 0;
+    background-color: var(--light-mirage-blue);
+    /* responsive center elem */
+    left: 28%; 
+    transform: translate(-50%, 0);
+    top: -550px;
+}
+
 .header__schedule-button-mobile {
     @apply inline-block rounded-full font-bold py-2 px-6;
     background: var(--primary-pink);
