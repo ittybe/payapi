@@ -7,6 +7,7 @@
     margin-left: var(--m-page-margin-x);
     margin-right: var(--m-page-margin-x);
 }
+
 .email-section__heading {
     @apply leading-tight;
     font-size: var(--m-big-heading);
@@ -14,10 +15,12 @@
     text-align: center;
     color: var(--blue);
 }
+
 .page-padding-x {
     padding-left: var(--m-page-margin-x);
     padding-right: var(--m-page-margin-x);
 }
+
 body {
     @apply leading-loose;
     position: relative;
@@ -32,6 +35,15 @@ html {
     overflow-x: hidden;
 }
 
+.btn {
+    @apply inline-block rounded-full py-2 px-6;
+}
+
+.btn--hollow-blue {
+    border: 1px var(--blue) solid;
+    font-weight: bold;
+    color: var(--blue);
+}
 @media screen and (min-width: 768px) {
     .email-section__heading {
         font-size: var(--t-home-big-heading)

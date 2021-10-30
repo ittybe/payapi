@@ -36,5 +36,16 @@
     --m-page-margin-y: 30px;
     --m-page-margin-x: 30px;
 
+    /* pricing */
+    --m-pricing-page__heading--font-size: 36px;
+    --m-plan__heading--font-size: 24px;
+    --m-plan__price--font-size: 56px;
+    --m-plan__pro--font-size: 16px;     
+    --t-plan__about--font-size: 15px;
+    --t-pricing-page__heading--font-size: 48px;
+    --t-plan__price--font-size: 48px;
+
+    --d-pricing-page__heading--font-size: 52px;
+
     --max-width-home-desktop: 1000px;
 }

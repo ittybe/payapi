@@ -1,0 +1,83 @@
+.pricing-page::after {
+    @apply rounded-full;
+    content: "";
+    display: block;
+    height: 780px;
+    width: 780px;
+    
+    position: absolute;
+    z-index: 0;
+    background-color: var(--lighter-blue);
+    top: -600px;
+    right: -550px;
+}
+
+.pricing-page__heading {
+    @apply my-12;
+    font-size: var(--m-pricing-page__heading--font-size);
+    font-family: var(--heading-font-family);
+    color: var(--blue);
+    text-align: center;
+}
+
+.plan {
+    @apply mb-12;
+    text-align: center;
+}
+
+.plan__about {
+    display: none;
+}
+
+.plan__price {
+    @apply mt-10;
+    font-size: var(--m-plan__price--font-size);
+    font-family: var(--heading-font-family);
+    color: var(--blue);
+}
+
+.plan__heading {
+    font-size: var(--m-plan__heading--font-size);
+    font-family: var(--heading-font-family);
+    color: var(--primary-pink);
+}
+.plan__pros {
+    @apply py-6 my-6;
+    border-top: 1px solid #BFCBD5;
+    border-bottom: 1px solid #BFCBD5;
+}
+.plan__pro {
+    @apply mx-auto;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    font-size: var(--m-plan__pro--font-size);
+    width: 150px;
+}
+.plan__pro::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 10px;
+    margin-right: 20px;
+    background-image: url("./assets/shared/desktop/icon-check.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+.plan__pro--unactive {
+    color: #92A3B2;
+}
+
+.plan__pro--unactive::before {
+    background-image: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1248px) {
+
+}
