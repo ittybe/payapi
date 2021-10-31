@@ -104,7 +104,7 @@
 
 @media screen and (min-width: 1248px) {
     .plan {
-        @apply m-4;
+        @apply mr-8 ml-0;
         text-align: left;
     }
     .plan__about {
@@ -112,5 +112,9 @@
     }
     .plan__pro {
         @apply mr-auto ml-0;
+    }
+    .pricing-page__heading {
+        font-size: var(--d-pricing-page__heading--font-size);
+        text-align: left;
     }
 }
