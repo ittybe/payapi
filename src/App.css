@@ -4,7 +4,7 @@
 
 }
 
-header {
+.header {
     margin-top: var(--m-page-margin-y);
 }
 
@@ -123,6 +123,10 @@ footer::after {
     display: none;
 }
 @media screen and (min-width: 768px) {
+    .header {
+        position: relative;
+        z-index: 10;
+    }
     .header__nav-mobile {
         display: none;
     }
@@ -133,7 +137,7 @@ footer::after {
         @apply flex-1;
         display: flex;
     }
-    .header__nav ul {
+    .header__link-list {
         @apply mx-auto;
     }
     .header__nav li {
@@ -179,7 +183,10 @@ footer::after {
     header.page-margin-x {
         @apply mx-auto;
     }
-
+    .header__link-list, .nav-bottom {
+        margin-left: 70px;
+        margin-right: auto;
+    }
     .footer__content-wrapper {
         @apply mx-auto;
         max-width: var(--max-width-home-desktop);

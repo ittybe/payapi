@@ -75,9 +75,42 @@
 
 
 @media screen and (min-width: 768px) {
-    
+    .pricing-page__heading {
+        font-size: var(--t-pricing-page__heading--font-size);
+    }
+    .pricing-section {
+        display: flex;
+        flex-direction: row;
+    }
+    .plan__about {
+        @apply my-4;
+        display: block;
+        color: var(--light-blue);
+        font-size: var(--t-plan__about--font-size);
+        height: 90px;
+    }
+    .plan__price {
+        @apply mt-0;
+        font-size: var(--t-plan__price--font-size);
+    }
+    .plan {
+        @apply m-2;
+    }
+    .pricing-page::after {
+        top: -500px;
+        right: -450px;
+    } 
 }
 
 @media screen and (min-width: 1248px) {
-
+    .plan {
+        @apply m-4;
+        text-align: left;
+    }
+    .plan__about {
+        height: auto;
+    }
+    .plan__pro {
+        @apply mr-auto ml-0;
+    }
 }

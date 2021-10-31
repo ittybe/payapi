@@ -7,6 +7,10 @@
     margin-left: var(--m-page-margin-x);
     margin-right: var(--m-page-margin-x);
 }
+.page-padding-x {
+    padding-left: var(--m-page-margin-x);
+    padding-right: var(--m-page-margin-x);
+}
 
 .email-section__heading {
     @apply leading-tight;
@@ -16,10 +20,7 @@
     color: var(--blue);
 }
 
-.page-padding-x {
-    padding-left: var(--m-page-margin-x);
-    padding-right: var(--m-page-margin-x);
-}
+
 
 body {
     @apply leading-loose;
@@ -47,5 +48,17 @@ html {
 @media screen and (min-width: 768px) {
     .email-section__heading {
         font-size: var(--t-home-big-heading)
+    }
+    .page-margin-x {
+        @apply mx-8;   
+    }
+}
+@media screen and (min-width: 1248px) {
+    .page-margin-x {
+        @apply mx-auto;
+        max-width: 1000px;
+    }
+    .page-padding-x {
+
     }
 }

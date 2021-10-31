@@ -24,7 +24,6 @@
     --body-font-weight: 400;
     --page-margin-x: 20px;
 
-
     /* font size */
     --m-big-heading: 32px;
     --m-heading: 18px;
@@ -41,6 +40,7 @@
     --m-plan__heading--font-size: 24px;
     --m-plan__price--font-size: 56px;
     --m-plan__pro--font-size: 16px;     
+    
     --t-plan__about--font-size: 15px;
     --t-pricing-page__heading--font-size: 48px;
     --t-plan__price--font-size: 48px;
