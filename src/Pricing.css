@@ -1,17 +1,3 @@
-.pricing-page::after {
-    @apply rounded-full;
-    content: "";
-    display: block;
-    height: 780px;
-    width: 780px;
-    
-    position: absolute;
-    z-index: 0;
-    background-color: var(--lighter-blue);
-    top: -600px;
-    right: -550px;
-}
-
 .pricing-page__heading {
     @apply my-12;
     font-size: var(--m-pricing-page__heading--font-size);
@@ -96,10 +82,6 @@
     .plan {
         @apply m-2;
     }
-    .pricing-page::after {
-        top: -500px;
-        right: -450px;
-    } 
 }
 
 @media screen and (min-width: 1248px) {

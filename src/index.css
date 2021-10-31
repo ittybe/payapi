@@ -3,10 +3,25 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap');
 
+.top-circle::after {
+    @apply rounded-full;
+    content: "";
+    display: block;
+    height: 780px;
+    width: 780px;
+    
+    position: absolute;
+    z-index: 0;
+    background-color: var(--lighter-blue);
+    top: -600px;
+    right: -550px;
+}
+
 .page-margin-x {
     margin-left: var(--m-page-margin-x);
     margin-right: var(--m-page-margin-x);
 }
+
 .page-padding-x {
     padding-left: var(--m-page-margin-x);
     padding-right: var(--m-page-margin-x);
@@ -19,8 +34,6 @@
     text-align: center;
     color: var(--blue);
 }
-
-
 
 body {
     @apply leading-loose;
@@ -52,6 +65,10 @@ html {
     .page-margin-x {
         @apply mx-8;   
     }
+    .top-circle::after {
+        top: -500px;
+        right: -450px;
+    }
 }
 @media screen and (min-width: 1248px) {
     .page-margin-x {
@@ -59,6 +76,10 @@ html {
         max-width: 1000px;
     }
     .page-padding-x {
-
+        
+    }
+    .top-circle::after {
+        top: -500px;
+        right: -170px;
     }
 }

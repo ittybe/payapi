@@ -4,7 +4,7 @@ import "./Pricing.css";
 export class Pricing extends react.Component {
     render() {
         return (
-            <div className="pricing-page page-margin-x">
+            <div className="pricing-page top-circle page-margin-x">
                 <div className="pricing-page__heading">Pricing</div>
                 <div className="pricing-section">
                     <div className="plan">
