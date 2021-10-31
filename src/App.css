@@ -48,7 +48,10 @@ footer::after {
 .social-media a {
     @apply m-4;
 }
-
+.header__logo-link-wrapper {
+    position: relative;
+    z-index: 10;
+}
 .header__show-hide-menu {
     @apply ml-auto my-auto;
     background-image: url("./assets/shared/mobile/menu.svg");
@@ -122,6 +125,7 @@ footer::after {
 .header__nav {
     display: none;
 }
+
 @media screen and (min-width: 768px) {
     .header {
         position: relative;

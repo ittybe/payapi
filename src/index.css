@@ -14,7 +14,7 @@
     z-index: 0;
     background-color: var(--lighter-blue);
     top: -600px;
-    right: -550px;
+    right: -500px;
 }
 
 .page-margin-x {
@@ -76,7 +76,7 @@ html {
         max-width: 1000px;
     }
     .page-padding-x {
-        
+
     }
     .top-circle::after {
         top: -500px;

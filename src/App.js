@@ -45,7 +45,7 @@ export class App extends react.Component {
             <Router>
                 <div className={`page-wrapper ${this.state.isMenuHidden ? "" : "scroll-lock"}`}>
                     <header className="header flex flex-row page-margin-x">
-                        <div className="flex items-center justify-center">
+                        <div className="header__logo-link-wrapper flex items-center justify-center">
                             <Link to="/">
                                 <img src={logo} alt="logo" />
                             </Link>
