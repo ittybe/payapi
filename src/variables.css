@@ -24,6 +24,10 @@
     --body-font-weight: 400;
     --page-margin-x: 20px;
 
+    --m-page-margin-y: 30px;
+
+    --m-page-margin-x: 30px;
+    --t-page-margin-x: 48px;
     /* font size */
     --m-big-heading: 32px;
     --m-heading: 18px;
@@ -32,8 +36,7 @@
     --t-home-big-heading: 48px;
     --t-home-heading: 18px;
     --d-home-main-heading: 72px;
-    --m-page-margin-y: 30px;
-    --m-page-margin-x: 30px;
+    
 
     /* pricing */
     --m-pricing-page__heading--font-size: 36px;
@@ -46,6 +49,15 @@
     --t-plan__price--font-size: 48px;
 
     --d-pricing-page__heading--font-size: 52px;
+    
+    /* about us */
+    --m-info-about-us__heading--font-size: 24px;
+    --m-statistics-about-us__heading--font-size: 16px;
+    --m-statistics-about-us__number--font-size: 56px;
+    
+    --t-info-about-us__heading--font-size: 32px;
 
+    --about-page-section-max-width: 800px;
+    
     --max-width-home-desktop: 1000px;
 }

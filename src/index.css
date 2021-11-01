@@ -13,7 +13,7 @@
     position: absolute;
     z-index: 0;
     background-color: var(--lighter-blue);
-    top: -600px;
+    top: -650px;
     right: -500px;
 }
 
@@ -43,6 +43,7 @@ body {
     background-color: var(--body-bg-color);
     font-size: 15px;
     overflow-x: hidden;
+    color: var(--light-blue);
 }
 
 html {
@@ -63,7 +64,12 @@ html {
         font-size: var(--t-home-big-heading)
     }
     .page-margin-x {
-        @apply mx-8;   
+        margin-left: var(--t-page-margin-x);
+        margin-right: var(--t-page-margin-x);
+    }
+    .page-padding-x {
+        padding-left: var(--t-page-margin-x);
+        padding-right: var(--t-page-margin-x);
     }
     .top-circle::after {
         top: -500px;
