@@ -56,7 +56,7 @@ export class Home extends react.Component {
                                 their accounts to apps they love using our API. We provide developers
                                 with the tools they need to create easy and accessible experiences
                                 for their users.</div>
-                            <Link to="/about" className="rounded-full border-2 border-white py-3 px-8 text-white inline-block">
+                            <Link to="/about" className="btn btn--hollow-white">
                                 About Us
                             </Link>
                         </div>

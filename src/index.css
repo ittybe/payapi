@@ -51,13 +51,23 @@ html {
 }
 
 .btn {
-    @apply inline-block rounded-full py-2 px-6;
+    @apply inline-block rounded-full py-2 px-7;
 }
 
 .btn--hollow-blue {
     border: 1px var(--blue) solid;
     font-weight: bold;
     color: var(--blue);
+}
+.btn--hollow-white {
+    border: 1px var(--primary-white) solid;
+    font-weight: bold;
+    color: var(--primary-white);
+}
+.btn--pink-filled {
+    background: var(--primary-pink);
+    color: white;
+    font-weight: bold;
 }
 @media screen and (min-width: 768px) {
     .email-section__heading {

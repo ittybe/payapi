@@ -118,9 +118,7 @@ footer::after {
 }
 
 .header__schedule-button-mobile {
-    @apply inline-block rounded-full font-bold py-2 px-6;
-    background: var(--primary-pink);
-    color: white;
+    @apply mt-2;
 }
 .header__nav {
     display: none;
@@ -144,17 +142,12 @@ footer::after {
     .header__link-list {
         @apply mx-auto;
     }
+    
     .header__nav li {
         @apply mx-5 font-bold;
         color: var(--dark-blue)
 
     }
-    .header__schedule-button{
-        @apply ml-auto rounded-full font-bold py-2 px-6;
-        background: var(--primary-pink);
-        color: white;
-    }
-  
 
     .footer__content-wrapper {
         display: flex;

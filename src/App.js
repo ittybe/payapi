@@ -65,7 +65,7 @@ export class App extends react.Component {
                                     <Link to="contact">Contact</Link>
                                 </li>
                             </ul>
-                            <button className="header__schedule-button">
+                            <button className="header__schedule-button btn btn--pink-filled">
                                 Schedule a Demo
                             </button>
                         </nav>
@@ -81,7 +81,7 @@ export class App extends react.Component {
                                     <Link to="contact">Contact</Link>
                                 </li>
                             </ul>
-                            <button className="header__schedule-button-mobile">
+                            <button className="header__schedule-button-mobile btn btn--pink-filled">
                                 Schedule a Demo
                             </button>
                         </nav>
