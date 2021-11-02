@@ -5,7 +5,7 @@ export class Pricing extends react.Component {
     render() {
         return (
             <div className="pricing-page top-circle page-margin-x">
-                <div className="pricing-page__heading">Pricing</div>
+                <div className="page-heading">Pricing</div>
                 <div className="pricing-section">
                     <div className="plan">
                         <div className="plan__heading">Free Plan</div>
