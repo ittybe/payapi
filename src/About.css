@@ -1,13 +1,4 @@
 
-.page-heading {
-    @apply my-12 leading-tight;
-    font-size: var(--m-pricing-page__heading--font-size);
-    font-family: var(--heading-font-family);
-    color: var(--blue);
-    text-align: center;
-    position: relative;
-    z-index: 10;
-}
 
 .info-about-us {
     @apply mt-10 text-center;
@@ -54,10 +45,6 @@
     background-position: center;
 }
 @media screen and (min-width: 768px) {
-    .page-heading {
-        font-size: var(--t-pricing-page__heading--font-size);
-    }
-
     .page-heading--about-page {
         @apply mx-auto;
         max-width: 580px;
@@ -112,10 +99,6 @@
 }
 
 @media screen and (min-width: 1248px) {
-    .page-heading {
-        font-size: var(--d-pricing-page__heading--font-size);
-        text-align: left;
-    }
     .page-heading--about-page {
         @apply ml-auto;
     }
