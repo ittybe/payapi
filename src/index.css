@@ -85,7 +85,7 @@ html {
 
     }
     .top-circle::after {
-        top: -500px;
-        right: -170px;
+        top: -550px;
+        right: -50px;
     }
 }

@@ -65,7 +65,6 @@
 
     .info-about-us {
         @apply mt-14 flex flex-row text-left;
-        max-width: var(--about-page-section-max-width)
     }
 
     .info-about-us__heading {
@@ -100,6 +99,17 @@
         background-image: url("./assets/about/tablet/image-team-members.jpg");
     }
 }
+@media screen and (min-width: 1000px) {
+    .page-heading--about-page {
+        max-width: var(--d-about-page-section-max-width);
+        padding-right: 100px; 
+    }
+    .info-about-us {
+        @apply mx-auto;
+        max-width: var(--d-about-page-section-max-width);
+    }
+    
+}
 
 @media screen and (min-width: 1248px) {
     .page-heading {
@@ -108,5 +118,24 @@
     }
     .page-heading--about-page {
         @apply ml-auto;
+    }
+    .about-page__image-container{
+        background-image: url('./assets//about/desktop/image-team-members.jpg');
+        height: 450px;
+        position: relative;
+    }
+    .about-page__image-container::after {
+        @apply rounded-full;
+        content: "";
+        display: block;
+        height: 780px;
+        width: 780px;
+        
+        position: absolute;
+        z-index: -1;
+        background-color: var(--lighter-blue);
+        top: 50%;
+        transform: translate(0%, -50%);
+        left: -560px;
     }
 }
