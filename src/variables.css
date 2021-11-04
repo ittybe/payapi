@@ -62,5 +62,7 @@
 
     /* contacts */
     --business-allies-contacts__heading--font-size: 24px;
+    --t-max-width-form: 445px;
+    --t-max-width-logos: 541px;
     --max-width-home-desktop: 1000px;
 }

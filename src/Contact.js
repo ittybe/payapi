@@ -9,9 +9,9 @@ import "./Contact.css";
 
 export function Contact() {
     return (
-        <div className="contact-page page-margin-x">
-            <div className="page-heading">Submit a help request and we’ll get in touch shortly.</div>
-            <div>
+        <div className="contact-page page-margin-x top-circle">
+            <div className="page-heading page-heading--contacts">Submit a help request and we’ll get in touch shortly.</div>
+            <div className="contact-page__content-wrapper">
                 <div className="contact-page__form-wrapper">
                     <form className="contact-form" action="">
                         <input className="text-input contact-form__name-field" type="text" id="name" name="name" placeholder="Name" autocomplete="off" ></input>
@@ -39,9 +39,6 @@ export function Contact() {
                         <div><img src={googleLogo} alt="l" /></div>
                     </div>
                 </div>
-            </div>
-            <div className="email-section page-margin-x">
-                <div className="email-section__heading">Ready to start?</div>
             </div>
         </div>
     )

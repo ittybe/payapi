@@ -33,7 +33,7 @@ export class App extends react.Component {
         if (window.innerWidth >= 768) {
             this.setState({
                 isMenuHidden: true
-            }) 
+            })
         }
     }
     showHideMenu() {
@@ -86,24 +86,29 @@ export class App extends react.Component {
                                 Schedule a Demo
                             </button>
                         </nav>
-                        <button className={`header__show-hide-menu ${this.state.isMenuHidden ? "" : "header__show-hide-menu--hide-menu"}`} onClick={()=> this.showHideMenu()}>
+                        <button className={`header__show-hide-menu ${this.state.isMenuHidden ? "" : "header__show-hide-menu--hide-menu"}`} onClick={() => this.showHideMenu()}>
                         </button>
                     </header>
                     <div>
                         <Switch>
                             <Route path="/contact">
-                                <Contact/>
+                                <Contact />
                             </Route>
                             <Route path="/pricing">
-                                <Pricing/>
+                                <Pricing />
                             </Route>
                             <Route path="/about">
-                                <About/>
+                                <About />
                             </Route>
                             <Route path="/">
                                 <Home />
                             </Route>
                         </Switch>
+                    </div>
+                    <div className="email-section text-center page-margin-x">
+                        <div className="email-section__heading">Ready to start?</div>
+                        {/* email component */}
+                        <div></div>
                     </div>
                     <footer className="text-center page-padding-x">
                         <div className="footer__content-wrapper">

@@ -61,9 +61,7 @@ export class Pricing extends react.Component {
                         <div className="btn btn--hollow-blue">Request Access</div>
                     </div>
                 </div>
-                <div className="email-section page-margin-x">
-                    <div className="email-section__heading">Ready to start?</div>
-                </div>
+                
             </div>
         )
     }

@@ -46,9 +46,6 @@ export function About(props) {
                 <div className="info-about-us__text">   We're all passionate about building a more efficient and inclusive financial infrastructure 
     together. At PayAPI, we have diverse backgrounds and skills.</div>
             </div>
-            <div className="email-section page-margin-x">
-                <div className="email-section__heading">Ready to start?</div>
-            </div>
         </div>
     )
 }

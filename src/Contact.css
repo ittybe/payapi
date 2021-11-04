@@ -82,3 +82,40 @@
 .business-allies-contacts {
     @apply mt-20;
 }
+
+@media screen and (min-width: 768px) {
+    .contact-form {
+        @apply mx-auto;
+        max-width: var(--t-max-width-form);
+    }   
+    .business-allies-contacts {
+        @apply mx-auto;
+        max-width: var(--t-max-width-logos);
+    }
+    .business-allies-contacts__heading {
+        @apply mx-auto;
+        max-width: var(--t-max-width-form);
+    }
+    .logos--contacts {
+        @apply m-0 mt-10;
+        max-width: initial;
+        min-width: initial;
+    }
+    .page-heading--contacts {
+        @apply mx-auto;
+        max-width: var(--t-max-width-logos);
+    }
+}
+
+@media screen and (min-width: 1248px) {
+    .contact-page__content-wrapper {
+        @apply flex flex-row;
+    }
+    .page-heading--contacts {
+        @apply mx-0;
+        max-width: 730px;
+    }
+    .business-allies-contacts {
+        @apply ml-auto mr-0;
+    }
+}
