@@ -58,11 +58,14 @@ html {
     border: 1px var(--blue) solid;
     font-weight: bold;
     color: var(--blue);
+    background-color: rgba(0, 0, 0, 0);
+
 }
 .btn--hollow-white {
     border: 1px var(--primary-white) solid;
     font-weight: bold;
     color: var(--primary-white);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .page-heading {

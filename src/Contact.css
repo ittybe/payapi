@@ -1,0 +1,84 @@
+.contact-form {
+    @apply flex flex-col;
+}
+.contact-form__submit-btn {
+    @apply px-12 mt-4;
+    width: min-content;
+}
+.text-input {
+    @apply px-6 pb-4 mb-6;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid var(--light-blue);
+}
+.text-input:focus {
+    outline: none;
+}
+/* custom checkbox */
+.contact-form__subscribe-label {
+    @apply leading-normal;
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--blue);
+}
+.contact-form__subscribe-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.contact-form__subscribe-span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--blue);
+    opacity: 0.26;
+}
+.contact-form__subscribe-label:hover  .contact-form__subscribe-span {
+    opacity: 0.5;
+}
+
+.contact-form__subscribe-input:checked ~ .contact-form__subscribe-span {
+    background-color: var(--primary-pink);
+    opacity: 1;
+}
+/* checkmark */
+.contact-form__subscribe-span::after {
+    content: "";
+    position: absolute;
+    display: none;
+
+    left: 9px;
+    top: 5px;
+    width: 7px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+.contact-form__subscribe-input:checked ~ .contact-form__subscribe-span::after {
+    display: block;
+}
+
+.business-allies-contacts__heading {
+    @apply leading-normal;
+    font-size: var(--business-allies-contacts__heading--font-size);
+    font-family: var(--heading-font-family);
+    text-align: center;
+}
+.logos--contacts {
+    @apply mt-10;
+}
+.logos--contacts>div>img{
+    filter: invert(29%) sepia(17%) saturate(1171%) hue-rotate(165deg) brightness(94%) contrast(88%);
+}
+.business-allies-contacts {
+    @apply mt-20;
+}

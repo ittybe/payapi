@@ -9,6 +9,7 @@ import {
 import Home from "./Home";
 import Pricing from "./Pricing";
 import About from "./About";
+import Contact from "./Contact";
 
 import './App.css';
 
@@ -91,7 +92,7 @@ export class App extends react.Component {
                     <div>
                         <Switch>
                             <Route path="/contact">
-
+                                <Contact/>
                             </Route>
                             <Route path="/pricing">
                                 <Pricing/>
