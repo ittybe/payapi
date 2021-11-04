@@ -10,6 +10,7 @@ import Home from "./Home";
 import Pricing from "./Pricing";
 import About from "./About";
 import Contact from "./Contact";
+import InputEmail from "./InputEmail";
 
 import './App.css';
 
@@ -108,7 +109,9 @@ export class App extends react.Component {
                     <div className="email-section text-center page-margin-x">
                         <div className="email-section__heading">Ready to start?</div>
                         {/* email component */}
-                        <div></div>
+                        <div className="email-section__input-wrapper">
+                            <InputEmail/>
+                        </div>
                     </div>
                     <footer className="text-center page-padding-x">
                         <div className="footer__content-wrapper">

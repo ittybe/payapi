@@ -34,7 +34,9 @@
     text-align: center;
     color: var(--blue);
 }
-
+.email-section__input-wrapper {
+    @apply mt-10;
+}
 body {
     @apply leading-loose;
     position: relative;
@@ -117,5 +119,11 @@ html {
     .top-circle::after {
         top: -550px;
         right: -50px;
+    }
+    .email-section {
+        @apply flex flex-row justify-between items-center;
+    }
+    .email-section__input-wrapper {
+        @apply m-0;
     }
 }
