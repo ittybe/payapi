@@ -34,7 +34,7 @@ export class Home extends react.Component {
                         {/* email component */}
                         <div></div>
                         {/* under text */}
-                        <div className="under-text text-center">Have any questions? <Link to="/contact"><span>Contact</span></Link> </div>
+                        <div className="under-text text-center">Have any questions? <Link to="/contact"><span>Contact Us</span></Link> </div>
                     </div>
                 </div>
                 {/* business allies section */}
