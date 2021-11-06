@@ -22,7 +22,7 @@ export class Pricing extends react.Component {
                             <div className="plan__pro plan__pro--unactive">Liabilities</div>
                             <div className="plan__pro plan__pro--unactive">Income</div>
                         </div>
-                        <div className="btn btn--hollow-blue">Request Access</div>
+                        <button className="btn btn--hollow-blue">Request Access</button>
                     </div>
                     <div className="plan">
                         <div className="plan__heading">Basic Plan</div>
@@ -40,7 +40,7 @@ export class Pricing extends react.Component {
                             <div className="plan__pro plan__pro--unactive">Liabilities</div>
                             <div className="plan__pro plan__pro--unactive">Income</div>
                         </div>
-                        <div className="btn btn--hollow-blue">Request Access</div>
+                        <button className="btn btn--hollow-blue">Request Access</button>
                     </div>
                     <div className="plan">
                         <div className="plan__heading">Premium Plan</div>
@@ -58,7 +58,7 @@ export class Pricing extends react.Component {
                             <div className="plan__pro">Liabilities</div>
                             <div className="plan__pro">Income</div>
                         </div>
-                        <div className="btn btn--hollow-blue">Request Access</div>
+                        <button className="btn btn--hollow-blue">Request Access</button>
                     </div>
                 </div>
                 

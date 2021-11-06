@@ -61,7 +61,10 @@ html {
     font-weight: bold;
     color: var(--blue);
     background-color: rgba(0, 0, 0, 0);
-
+}
+.btn--hollow-blue:hover {
+    background-color: var(--blue);
+    color: var(--primary-white);
 }
 .btn--hollow-white {
     border: 1px var(--primary-white) solid;
