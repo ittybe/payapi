@@ -69,7 +69,18 @@ html {
     color: var(--primary-white);
     background-color: rgba(0, 0, 0, 0);
 }
-
+.btn--hollow-white:hover {
+    background: var(--primary-white);
+    color: var(--mirage-blue);
+}
+.btn--pink-filled {
+    background: var(--primary-pink);
+    color: white;
+    font-weight: bold;
+}
+.btn--pink-filled:hover {
+    background-color: var(--primary-pink-hover);
+}
 .page-heading {
     @apply my-12 leading-tight;
     font-size: var(--m-pricing-page__heading--font-size);
@@ -79,11 +90,7 @@ html {
     position: relative;
     z-index: 10;
 }
-.btn--pink-filled {
-    background: var(--primary-pink);
-    color: white;
-    font-weight: bold;
-}
+
 .email-wrapper {
     @apply flex flex justify-center mt-10;
 }

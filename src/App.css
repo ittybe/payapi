@@ -44,9 +44,19 @@ footer::after {
 .nav-bottom li {
     @apply m-5;
 }
+.nav-bottom li:hover {
+    color: var(--primary-white);
+}
 
 .social-media a {
     @apply m-4;
+}
+.social-media a img {
+    filter: invert(100%) sepia(0%) saturate(5614%) hue-rotate(107deg) brightness(105%) contrast(102%);
+}
+.social-media a img:hover {
+    filter:invert(70%) sepia(36%) saturate(2510%) hue-rotate(295deg) brightness(89%) contrast(91%);
+
 }
 .header__logo-link-wrapper {
     position: relative;
@@ -120,8 +130,13 @@ footer::after {
 .header__schedule-button-mobile {
     @apply mt-2;
 }
+
 .header__nav {
     display: none;
+}
+
+.header__link-mobile:hover {
+    color: var(--primary-white);
 }
 
 @media screen and (min-width: 768px) {
@@ -142,7 +157,9 @@ footer::after {
     .header__link-list {
         @apply mx-auto;
     }
-    
+    .header__link:hover {
+        color: var(--blue);
+    }
     .header__nav li {
         @apply mx-5 font-bold;
         color: var(--dark-blue)

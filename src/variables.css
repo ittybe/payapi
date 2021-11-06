@@ -3,6 +3,7 @@
 :root {
     /* colors */
     --primary-pink:rgb(186, 66, 112);
+    --primary-pink-hover: #DA6D97;
     --primary-white:rgb(251, 252, 254);
 
     --gray: #B8BCC0;
@@ -11,6 +12,7 @@
     --mirage-blue:rgb(27, 38, 47);
     --charm-pink:rgb(218, 109, 151);
     --body-bg-color: #EDF3F8;
+
     /* circle color */
     --lighter-blue: #D2DBE3;
     --dark-blue: #657C8F;
