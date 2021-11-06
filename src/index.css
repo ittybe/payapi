@@ -84,6 +84,9 @@ html {
     color: white;
     font-weight: bold;
 }
+.email-wrapper {
+    @apply flex flex justify-center mt-10;
+}
 @media screen and (min-width: 768px) {
     .page-heading {
         font-size: var(--t-pricing-page__heading--font-size);
@@ -125,5 +128,13 @@ html {
     }
     .email-section__input-wrapper {
         @apply m-0;
+    }
+
+    .email-wrapper--home {
+        @apply justify-start;
+    }
+
+    .email-wrapper--bottom {
+        @apply mt-0;
     }
 }

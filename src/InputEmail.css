@@ -1,5 +1,5 @@
 .input-email {
-    @apply flex flex-col mx-auto;
+    @apply flex flex-col flex-1;
     max-width: 328px;
 }
 .input-email__input-field {
@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 768px) {
     .input-email {
-        @apply flex-row justify-center;
+        @apply flex-row justify-center flex-none;
         max-width: initial;
     }
     .input-email__input-field {

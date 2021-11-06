@@ -2,6 +2,10 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      "tablet": "768px",
+      "desktop":"1248px"
+    },
     colors: {
       "primary-pink": "var(--primary-ping)",
       "primary-white": "var(--primary-white)",

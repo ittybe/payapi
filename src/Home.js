@@ -1,6 +1,9 @@
 import react from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+
+import InputEmail from "./InputEmail";
+
 import phoneMockup from "./assets/home/desktop/illustration-phone-mockup.png"
 
 import microsoftLogo from "./assets/shared/desktop/microsoft.svg";
@@ -32,9 +35,11 @@ export class Home extends react.Component {
                         {/* heading */}
                         <div className="big-heading text-blue big-heading--main">Start building with our APIs for absolutely free.</div>
                         {/* email component */}
-                        <div></div>
+                        <div className="email-wrapper email-wrapper--home">
+                            <InputEmail/>
+                        </div>
                         {/* under text */}
-                        <div className="under-text text-center">Have any questions? <Link to="/contact"><span>Contact Us</span></Link> </div>
+                        <div className="under-text text-center mt-3">Have any questions? <Link to="/contact"><span>Contact Us</span></Link> </div>
                     </div>
                 </div>
                 {/* business allies section */}

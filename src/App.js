@@ -109,7 +109,7 @@ export class App extends react.Component {
                     <div className="email-section text-center page-margin-x">
                         <div className="email-section__heading">Ready to start?</div>
                         {/* email component */}
-                        <div className="email-section__input-wrapper">
+                        <div className="email-wrapper email-wrapper--bottom">
                             <InputEmail/>
                         </div>
                     </div>
