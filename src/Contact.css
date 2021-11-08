@@ -1,14 +1,59 @@
 .contact-form {
     @apply flex flex-col;
 }
+
 .contact-form__submit-btn {
     @apply px-12 mt-4;
     width: min-content;
+    cursor:pointer;
 }
+
+.contact-form__text-input-wrapper {
+    @apply flex relative;
+
+}
+
+/* error message */
+.contact-form__text-input-wrapper::after {
+    display: block;
+    position: absolute;
+    color: var(--error-color);
+    font-size: 11px;
+    bottom: 10px;
+    left: 1.5rem;
+}
+
+.contact-form__text-input-wrapper--empty-field::after {
+    content: "This field can't be empty";
+}
+
+.contact-form__text-input-wrapper--invalid-email::after {
+    content: "Email is invalid";
+}
+
 .text-input {
-    @apply px-6 pb-4 mb-6;
+    @apply px-6 pb-4 mb-8 flex-1;
     background-color: rgba(0, 0, 0, 0);
     border-bottom: 1px solid var(--light-blue);
+}
+
+.text-input:not(.text-input:placeholder-shown) {
+    border-bottom: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.text-input--error{
+    caret-color: var(var(--error-color));
+    color: var(--error-color);
+    border-bottom: 1px solid var(--error-color);
+}
+.text-input--error:not(.text-input:placeholder-shown) {
+    caret-color: var(var(--error-color));
+    color: var(--error-color);
+    border-bottom: 1px solid var(--error-color);
+}
+.text-input--error::placeholder {
+    color: var(--error-color);
 }
 .text-input:focus {
     outline: none;
