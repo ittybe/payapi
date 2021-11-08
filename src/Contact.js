@@ -101,10 +101,7 @@ export class Contact extends react.Component {
     }
     addClassesAfterValidation() {
         const validation = this.state.validation;
-        const errorInputClass = "text-input--error";
-        const errorEmptyMessageWrapperClass = "contact-form__text-input-wrapper--empty-field";
-        const errorInvalidEmailMessageWrapperClass = "contact-form__text-input-wrapper--invalid-email";
-
+        
         if (validation.name === -1) {
             this.addClassIfNotExists(this.nameRef, this.errorInputClass);
             this.addClassIfNotExists(this.nameWrapperRef, this.errorEmptyMessageWrapperClass);

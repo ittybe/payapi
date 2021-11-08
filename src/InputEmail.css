@@ -1,12 +1,26 @@
 .input-email {
     @apply flex flex-col flex-1;
     max-width: 328px;
+    color: var(--blue);
+
+}
+
+.input-email--invalid-email {
+    position: relative;
+    color: var(--error-color);
+}
+.input-email--invalid-email::after {
+    content: "invalid email";
+    position: absolute;
+    display: block;
+    top: -25px;
+    left: 1.75rem;
+    color: var(--error-color);
 }
 .input-email__input-field {
     @apply inline-block rounded-full py-2 px-7 mb-5;
     font-weight: bold;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    color: var(--blue);
 }
 .input-email__input-field:focus {
     outline: none;
