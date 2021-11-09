@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/payapi/static/css/main.b7c25969.chunk.css",
+    "main.js": "/payapi/static/js/main.29c5fd30.chunk.js",
+    "main.js.map": "/payapi/static/js/main.29c5fd30.chunk.js.map",
+    "runtime-main.js": "/payapi/static/js/runtime-main.4d93d773.js",
+    "runtime-main.js.map": "/payapi/static/js/runtime-main.4d93d773.js.map",
+    "static/js/2.e0573eb2.chunk.js": "/payapi/static/js/2.e0573eb2.chunk.js",
+    "static/js/2.e0573eb2.chunk.js.map": "/payapi/static/js/2.e0573eb2.chunk.js.map",
+    "index.html": "/payapi/index.html",
+    "static/css/main.b7c25969.chunk.css.map": "/payapi/static/css/main.b7c25969.chunk.css.map",
+    "static/js/2.e0573eb2.chunk.js.LICENSE.txt": "/payapi/static/js/2.e0573eb2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/payapi/static/media/menu.5062cf20.svg",
+    "static/media/facebook.d3345e0e.svg": "/payapi/static/media/facebook.d3345e0e.svg",
+    "static/media/google.cf5c60bc.svg": "/payapi/static/media/google.cf5c60bc.svg",
+    "static/media/hewlett-packard.66eb8294.svg": "/payapi/static/media/hewlett-packard.66eb8294.svg",
+    "static/media/icon-banking-and-coverage.c19127eb.svg": "/payapi/static/media/icon-banking-and-coverage.c19127eb.svg",
+    "static/media/Pricing.css": "/payapi/static/media/icon-check.e88dc5fa.svg",
+    "static/media/icon-consumer-payments.329b6c98.svg": "/payapi/static/media/icon-consumer-payments.329b6c98.svg",
+    "static/media/icon-personal-finances.cdda9f82.svg": "/payapi/static/media/icon-personal-finances.cdda9f82.svg",
+    "static/media/illustration-easy-to-implement.684521eb.png": "/payapi/static/media/illustration-easy-to-implement.684521eb.png",
+    "static/media/illustration-phone-mockup.5957d538.png": "/payapi/static/media/illustration-phone-mockup.5957d538.png",
+    "static/media/illustration-simple-ui.dfb875ac.svg": "/payapi/static/media/illustration-simple-ui.dfb875ac.svg",
+    "static/media/About.css": "/payapi/static/media/image-team-members.f4078f89.jpg",
+    "static/media/linkedin.3e5a41ce.svg": "/payapi/static/media/linkedin.3e5a41ce.svg",
+    "static/media/logo.23aa4a68.svg": "/payapi/static/media/logo.23aa4a68.svg",
+    "static/media/microsoft.2b08a4f9.svg": "/payapi/static/media/microsoft.2b08a4f9.svg",
+    "static/media/nvidia.8d621973.svg": "/payapi/static/media/nvidia.8d621973.svg",
+    "static/media/oracle.6a3fb877.svg": "/payapi/static/media/oracle.6a3fb877.svg",
+    "static/media/tesla.5b6d9dd2.svg": "/payapi/static/media/tesla.5b6d9dd2.svg",
+    "static/media/twitter.1e1e4eaf.svg": "/payapi/static/media/twitter.1e1e4eaf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d93d773.js",
+    "static/js/2.e0573eb2.chunk.js",
+    "static/css/main.b7c25969.chunk.css",
+    "static/js/main.29c5fd30.chunk.js"
+  ]
+}
