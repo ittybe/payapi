@@ -3,8 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link,
-    HashRouter
+    Link
 } from "react-router-dom";
 
 import Home from "./Home";
@@ -48,7 +47,7 @@ export class App extends react.Component {
     }
     render() {
         return (
-            <Router>
+            // <Router>
                 <div className={`page-wrapper ${this.state.isMenuHidden ? "" : "scroll-lock"}`}>
                     <header className="header flex flex-row page-margin-x">
                         <div className="header__logo-link-wrapper flex items-center justify-center">
@@ -152,7 +151,7 @@ export class App extends react.Component {
 
                     </footer>
                 </div>
-            </Router>
+            /* </Router> */
         )
     }
 }
