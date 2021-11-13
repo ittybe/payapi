@@ -93,16 +93,16 @@ export class App extends react.Component {
                     </header>
                     <div>
                         <Switch>
-                            <Route path="/contact">
+                            <Route path="/payapi/contact">
                                 <Contact />
                             </Route>
-                            <Route path="/pricing">
+                            <Route path="/payapi/pricing">
                                 <Pricing />
                             </Route>
-                            <Route path="/about">
+                            <Route path="/payapi/about">
                                 <About />
                             </Route>
-                            <Route path="/">
+                            <Route path="/payapi">
                                 <Home />
                             </Route>
                         </Switch>
