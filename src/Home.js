@@ -39,7 +39,7 @@ export class Home extends react.Component {
                             <InputEmail/>
                         </div>
                         {/* under text */}
-                        <div className="under-text text-center mt-3">Have any questions? <Link to="/contact"><span>Contact Us</span></Link> </div>
+                        <div className="under-text text-center mt-3">Have any questions? <Link to="/payapi/contact"><span>Contact Us</span></Link> </div>
                     </div>
                 </div>
                 {/* business allies section */}
@@ -61,7 +61,7 @@ export class Home extends react.Component {
                                 their accounts to apps they love using our API. We provide developers
                                 with the tools they need to create easy and accessible experiences
                                 for their users.</div>
-                            <Link to="/about" className="btn btn--hollow-white">
+                            <Link to="/payapi/about" className="btn btn--hollow-white">
                                 About Us
                             </Link>
                         </div>

@@ -48,25 +48,24 @@ export class App extends react.Component {
     }
     render() {
         return (
-            <HashRouter basename="/">
                 <Router>
                     <div className={`page-wrapper ${this.state.isMenuHidden ? "" : "scroll-lock"}`}>
                         <header className="header flex flex-row page-margin-x">
                             <div className="header__logo-link-wrapper flex items-center justify-center">
-                                <Link to="/">
+                                <Link to="/payapi">
                                     <img src={logo} alt="logo" />
                                 </Link>
                             </div>
                             <nav className={`header__nav ${(this.state.isMenuHidden ? "hidden" : "")}`}>
                                 <ul className="header__link-list flex flex-row items-center">
                                     <li className="header__link">
-                                        <Link to="/pricing">Pricing</Link>
+                                        <Link to="/payapi/pricing">Pricing</Link>
                                     </li>
                                     <li className="header__link">
-                                        <Link to="/about">About</Link>
+                                        <Link to="/payapi/about">About</Link>
                                     </li>
                                     <li className="header__link">
-                                        <Link to="/contact">Contact</Link>
+                                        <Link to="/payapi/contact">Contact</Link>
                                     </li>
                                 </ul>
                                 <button className="header__schedule-button btn btn--pink-filled">
@@ -76,13 +75,13 @@ export class App extends react.Component {
                             <nav className={`header__nav-mobile ${(this.state.isMenuHidden ? "hidden" : "")}`}>
                                 <ul className="header__link-list-mobile flex flex-row items-center">
                                     <li className="header__link-mobile">
-                                        <Link to="/pricing">Pricing</Link>
+                                        <Link to="/payapi/pricing">Pricing</Link>
                                     </li>
                                     <li className="header__link-mobile">
-                                        <Link to="/about">About</Link>
+                                        <Link to="/payapi/about">About</Link>
                                     </li>
                                     <li className="header__link-mobile">
-                                        <Link to="/contact">Contact</Link>
+                                        <Link to="/payapi/contact">Contact</Link>
                                     </li>
                                 </ul>
                                 <button className="header__schedule-button-mobile btn btn--pink-filled">
@@ -94,13 +93,13 @@ export class App extends react.Component {
                         </header>
                         <div>
                             <Switch>
-                                <Route path="/contact">
+                                <Route exact path="/contact">
                                     <Contact />
                                 </Route>
-                                <Route path="/pricing">
+                                <Route exact path="/pricing">
                                     <Pricing />
                                 </Route>
-                                <Route path="/about">
+                                <Route exact path="/about">
                                     <About />
                                 </Route>
                                 <Route exact path="/">
@@ -119,7 +118,7 @@ export class App extends react.Component {
                             <div className="footer__content-wrapper">
                                 {/* logo */}
                                 <div className="logo inline-block">
-                                    <Link to="/">
+                                    <Link to="/payapi">
                                         <img src={logo} alt="logo" />
                                     </Link>
                                 </div>
@@ -127,13 +126,13 @@ export class App extends react.Component {
                                 <nav className="nav-bottom">
                                     <ul>
                                         <li>
-                                            <Link to="/pricing">Pricing</Link>
+                                            <Link to="/payapi/pricing">Pricing</Link>
                                         </li>
                                         <li>
-                                            <Link to="/about">About</Link>
+                                            <Link to="/payapi/about">About</Link>
                                         </li>
                                         <li>
-                                            <Link to="/contact">Contact</Link>
+                                            <Link to="/payapi/contact">Contact</Link>
                                         </li>
                                     </ul>
                                 </nav>
@@ -154,7 +153,6 @@ export class App extends react.Component {
                         </footer>
                     </div>
                 </Router>
-            </HashRouter>
         )
     }
 }
